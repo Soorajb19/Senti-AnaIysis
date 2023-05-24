@@ -15,5 +15,5 @@ jobs:
          fetch-depth: 0 
      - name: Push to hub
        env:
-         HF_TOKEN: ${{ secrets.HF_TOKEN }}
+         HF_TOKEN: ${{ secrets.HFTOKEN }}
        run: git push --force https://SoorajAI:$HF_TOKEN@huggingface.co/spaces/SoorajAI/Senti-anaIysis main
